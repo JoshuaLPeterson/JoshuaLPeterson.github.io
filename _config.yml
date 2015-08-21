@@ -1,0 +1,17 @@
+# Site settings
+title: beingMinimal - Portfolio of Raghu Nayyar
+email: hey@raghunayyar.com
+description: > # this means to ignore newlines until "baseurl:"
+  I am Raghu Nayyar, an Interface & Interaction designer from India.
+  I love to help awesome people build awesome products.
+  In my free time, I blabber about design, code and life 
+  and a few projects I am involved in.
+baseurl: ""
+url: "http://raghunayyar.com"
+twitter_username: jekyllrb
+github_username:  jekyll
+
+paginator: 5
+
+# Build settings
+markdown: kramdown

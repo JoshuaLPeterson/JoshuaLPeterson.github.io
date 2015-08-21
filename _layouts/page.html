@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="post">
+	<header class="post-header">
+		<h1 class="post-type"> {{ page.categories }}</h1>
+		<h2 class="post-title">{{ page.title }}</h2>
+		<p class="post-date">{{ page.date | date: '%B %d, %Y'}}</p>
+	</header>
+	<article class="post-content">
+
+		{{ content }}
+
+	</article>
+
+	<aside class="boastful">
+		<div class="home">
+			<a href="{{ site.url }}">Back to <i class="fa fa-1x fa-home"></i></a>
+		</div>
+	</aside>
+
+</section>

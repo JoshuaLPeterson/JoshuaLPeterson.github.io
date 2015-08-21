@@ -1,0 +1,25 @@
+<section id="blog" class="four">
+  <div class="container">
+    <header class="main-header">
+      <h2>Blog</h2>
+    </header>
+
+        <ul class="posts">
+          {% for post in site.categories.blog limit:5 %}
+            <li>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="post-title-container">
+                  <h3 class="post-title">{{ post.title }}</h3>
+                  <p class="post-description">{{ post.description }}</p>
+                </div>
+              </a>
+            </li>
+            {% endfor %}
+          </div>
+        </ul>
+        <div class="main-btn-holder">
+          <a href="/archives/" class="btn btn-large btn-primary">All Articles</a>
+        </div>
+
+  </div>
+</section>

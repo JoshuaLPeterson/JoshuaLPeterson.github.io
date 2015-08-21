@@ -1,0 +1,18 @@
+<section id="portfolio" class="two">
+  <div class="container">
+    <header class="main-header">
+      <h2>Projects</h2>
+    </header>
+
+    <div class="content-holder">
+      {% for post in site.categories.projects %}
+        <div class="image-surrownder">
+          <a class="workbox projectbox" href="{{ post.url | prepend: site.baseurl }}">
+            <h3>{{ post.title }}</h3>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
